@@ -1,6 +1,6 @@
-baseURL: http://example.org/
+baseURL: http://paakt.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: paakt
 theme: "PaperMod"
 
 enableRobotsTXT: true
@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+googleAnalytics: G-2J70VVDDXW
 
 minify:
   disableXML: true
@@ -16,14 +16,14 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: paakt blog
+  description: "logging"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: Paakt
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -42,15 +42,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
+    #favicon: "<link / abs url>"
+    #favicon16x16: "<link / abs url>"
+    #favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    #icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
@@ -73,13 +73,13 @@ params:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
 
-  socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/"
+  #socialIcons:
+  #  - name: twitter
+  #    url: "https://twitter.com/"
+  #  - name: stackoverflow
+  #    url: "https://stackoverflow.com"
+  #  - name: github
+  #    url: "https://github.com/"
 
   analytics:
     google:
@@ -95,7 +95,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/paakt/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -111,13 +111,17 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    #- identifier: categories
+    #  name: categories
+    #  url: /categories/
+    #  weight: 10
+    #- identifier: tags
+    #  name: tags
+    #  url: /tags/
+    #  weight: 20
+    - identifier: post
+      name: post
+      url: /post/
       weight: 20
     - identifier: example
       name: example.org
